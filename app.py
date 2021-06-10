@@ -6,8 +6,7 @@ import numpy as np
 import sklearn
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
-model = pickle.load(open(
-    'D:/Python/Practice Krish Naik/Vehicle Price Prediction with Deployment/Random_Forest_Regressor_Model.pkl', 'rb'))
+model = pickle.load(open('Random_Forest_Regressor_Model.pkl', 'rb'))
 
 
 @app.route('/', methods=['GET'])
